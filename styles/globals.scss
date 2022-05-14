@@ -1,3 +1,5 @@
+@import './lib/theme.scss';
+
 html,
 body {
   color: white;
@@ -17,6 +19,18 @@ a {
 
 button {
   cursor: pointer;
+  border: 3px solid $secondary_color;
+  background-color: $secondary_color;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: $secondary_color;
+    transition: 0.5s;
+    border-color: white;
+  }
 }
 
 input {
@@ -25,6 +39,7 @@ input {
   border-radius: 5px;
   background-color: transparent;
   color: white;
+  text-align: center;
 
   &::placeholder {
     text-align: center;
