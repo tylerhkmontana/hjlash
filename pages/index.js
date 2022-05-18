@@ -26,7 +26,7 @@ export default function Home() {
     <div>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>      
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>      
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Zen+Loop&display=swap" rel="stylesheet"/>  
         <title>HJ Lash | Coming soon!</title>
       </Head>
@@ -42,6 +42,7 @@ export default function Home() {
         <h2>"The one that stands out from the others"</h2>
         <p>The best lash spot is coming to your area. Stay on the lookout!</p>
   
+      
         <form className={styles.form_container} onSubmit={(e) => sendEmail(e)}>
           <input className={styles.email_input} 
             name="email" placeholder="E-mail" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required
