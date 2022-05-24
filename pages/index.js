@@ -1,57 +1,36 @@
 import styles from '../styles/pages/home.module.scss'
-import Nav from '../components/nav'
+import Image from 'next/image'
 import Head from 'next/head'
-import { useState } from 'react'
+import Nav from '../components/nav'
+import Logo from '../components/logo'
 
 export default function Home() {
-  const [fields, setFields] = useState({
-    email: '',
-    tel: '',
-    name: ''
-  })
-  const sendEmail = async (e) => {
-    e.preventDefault()
+    return (
+        <div>
+            <Head>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>      
+                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Zen+Loop&display=swap" rel="stylesheet"/>  
+                <title>HJ Lash</title>
+            </Head>
+            <Logo />
+            <Nav />
+        
+            <div className={styles.main_container}>
+                <div className={styles.main_content}>
+                    <h3>Slaying lashes all day</h3>
+                    <h1>Simply The Best.</h1>
+                    <p>We are one of the top rated eyelash extension salons in New Jersey.We specialize in custom lash extensions, lifts and mircoblading for the eyebrows.All the eye essentials in one stylish location!</p>
+                    <button>Appointment</button>
+                </div>  
+                <div className={styles.main_img_container}>
+                    <div className={styles.main_img1}><Image layout='fill' src='/img1.jpg'/></div>
+                    <div className={styles.main_img2}><Image layout='fill' src='/img2.jpg'/></div>
+                    <div className={styles.main_img3}><Image layout='fill' src='/img3.jpg'/></div>
+                    <div className={styles.main_img4}><Image layout='fill' src='/img4.jpg'/></div>
+                </div>
 
-    const response = await fetch('/api/email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(fields)
-    })
-    const data = await response.text()
-    console.log(data)
-  }
-  return (
-    <div>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>      
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Zen+Loop&display=swap" rel="stylesheet"/>  
-        <title>HJ Lash | Coming soon!</title>
-      </Head>
-      <Nav />
-      <div className={styles.background_container}>
-        <video autoPlay loop muted className={styles.background}>
-          <source src='/background.mp4' />
-        </video>
-      </div>
-      
-      <div className={styles.main_container}>
-        <h1>COMING JUNE 2022</h1>
-        <h2>"The one that stands out from the others"</h2>
-        <p>The best lash spot is coming to your area. Stay on the lookout!</p>
-  
-      
-        <form className={styles.form_container} onSubmit={(e) => sendEmail(e)}>
-          <input className={styles.email_input} 
-            name="email" placeholder="E-mail" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required
-            onChange={e => setFields({...fields, email: e.target.value})}/>
-          <input className={styles.name_input} name="client_name" type="text" placeholder="Name" onChange={e => setFields({...fields, name: e.target.value})} required/>
-          <input className={styles.tel_input} name="telephone" type="tel" placeholder='Phone Number' onChange={e => setFields({...fields, tel: e.target.value})} required/>
-          <button type='submit'>Notify Me</button>
-        </form>
-      </div>
-    </div>
-  )
+            </div>
+        </div>
+    )
 }

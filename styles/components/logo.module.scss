@@ -1,0 +1,18 @@
+@import '../lib/theme.scss';
+
+.container {
+    position: fixed;
+    z-index: 1;
+    top: 25px;
+    text-align: center;
+    left: 50px;
+
+    h1 {
+        font-size: $xlg_font;   
+    }
+}
+
+.j {
+    color: $primary_color;
+    font-size: $xlg_font;
+}

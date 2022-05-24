@@ -2,8 +2,10 @@
 
 html,
 body {
-  color: white;
+  color: $secondary_color;
   font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
 a {
@@ -15,26 +17,27 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: $base_font;
+  overflow-x: hidden;
 }
 
 button {
   cursor: pointer;
-  border: 3px solid $secondary_color;
-  background-color: $secondary_color;
-  border-radius: 5px;
+  border: 2px solid $primary_color;
+  background-color: transparent;
   padding: 5px;
-  color: white;
+  color: $primary_color;
 
   &:hover {
-    background-color: white;
-    color: $secondary_color;
+    background-color: $primary_color;
+    color: white;
     transition: 0.5s;
-    border-color: white;
   }
 }
 
 input {
   padding: 5px;
+  font-size: $md_font;
   border: 3px solid white;
   border-radius: 5px;
   background-color: transparent;

@@ -1,0 +1,13 @@
+@import '../lib/theme.scss';
+
+.nav_container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 50px;
+
+    li {
+        list-style: none;
+        font-size: $md_font;
+    }
+}
