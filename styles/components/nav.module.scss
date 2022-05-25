@@ -5,6 +5,12 @@
     top: 0;
     right: 0;
     padding: 50px;
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
     li {
         list-style: none;

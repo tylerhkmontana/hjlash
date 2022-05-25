@@ -25,8 +25,13 @@ button {
   cursor: pointer;
   border: 2px solid $primary_color;
   background-color: transparent;
-  padding: 5px;
+  font-size: $md_font;
+  padding: 10px;
   color: $primary_color;
+  border-radius: 5px;
+  font-family: inherit;
+  letter-spacing: inherit;
+  font-weight: bold;
 
   &:hover {
     background-color: $primary_color;

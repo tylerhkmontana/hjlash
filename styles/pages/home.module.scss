@@ -4,6 +4,7 @@
     width: 100vw;
     min-height: 100vh;
     display: flex;
+    padding: 0 50px;
 }
 
 .main_img_container {
@@ -11,23 +12,23 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .main_img1, .main_img2, .main_img3, .main_img4 {
     position: relative;
-    margin-right: 20px;
-    width: 300px;
-    height: 400px;
+    margin-left: 20px;
+    width: 23vw;
+    height: 50vh;
 }
 
-.main_img1, .main_img3 {
-    margin-bottom: 100px;
-}
+// .main_img1, .main_img3 {
+//     margin-bottom: 100px;
+// }
 
-.main_img2, .main_img4 {
-    margin-top: 100px;
-}
+// .main_img2, .main_img4 {
+//     margin-top: 100px;
+// }
 
 .main_content {
     flex: 1;
@@ -35,7 +36,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 50px;
 
     h1 { 
         font-size: $xxlg_font; 
@@ -45,4 +45,10 @@
         max-width: 600px;
         margin: 30px 0 70px 0;
     }
+}
+
+.appointment_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

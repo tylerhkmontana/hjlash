@@ -20,13 +20,15 @@ export default function Home() {
                 <div className={styles.main_content}>
                     <h3>Slaying lashes all day</h3>
                     <h1>Simply The Best.</h1>
-                    <p>We are one of the top rated eyelash extension salons in New Jersey.We specialize in custom lash extensions, lifts and mircoblading for the eyebrows.All the eye essentials in one stylish location!</p>
-                    <button>Appointment</button>
+                    <p>We are one of the top rated eyelash extension salons in New Jersey. We specialize in custom lash extensions.</p>
+                    {/* <div className={styles.appointment_btn}> */}
+                        <button>Appointment</button>    
+                    {/* </div> */}
                 </div>  
                 <div className={styles.main_img_container}>
                     <div className={styles.main_img1}><Image layout='fill' src='/img1.jpg'/></div>
                     <div className={styles.main_img2}><Image layout='fill' src='/img2.jpg'/></div>
-                    <div className={styles.main_img3}><Image layout='fill' src='/img3.jpg'/></div>
+                    {/* <div className={styles.main_img3}><Image layout='fill' src='/img3.jpg'/></div> */}
                     <div className={styles.main_img4}><Image layout='fill' src='/img4.jpg'/></div>
                 </div>
 
