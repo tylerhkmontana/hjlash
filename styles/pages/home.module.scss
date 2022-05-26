@@ -1,5 +1,12 @@
 @import '../lib/theme.scss';
 
+.section_divider {
+    width: 100vw;
+    margin-top: 50px;
+    font-size: $xlg_font;
+    text-align: center;
+}
+
 .main_container {
     width: 100vw;
     min-height: 100vh;
@@ -15,20 +22,13 @@
     justify-content: space-around;
 }
 
-.main_img1, .main_img2, .main_img3, .main_img4 {
+.main_img {
     position: relative;
     margin-left: 20px;
     width: 23vw;
     height: 50vh;
 }
 
-// .main_img1, .main_img3 {
-//     margin-bottom: 100px;
-// }
-
-// .main_img2, .main_img4 {
-//     margin-top: 100px;
-// }
 
 .main_content {
     flex: 1;
@@ -52,3 +52,22 @@
     justify-content: center;
     width: 100%;
 }
+
+.about_container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+}
+
+.about_content {
+    max-width: 600px;
+}
+

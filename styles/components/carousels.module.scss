@@ -1,0 +1,24 @@
+@import '../lib/theme.scss';
+
+.carousels_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousels {
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    border-radius: 10px;
+}
+
+.arrow_left, .arrow_right {
+    cursor: pointer;
+    width: 50px;
+}
+
+.arrow_left { margin-right: 25px; }
+.arrow_right { margin-left: 25px; }
