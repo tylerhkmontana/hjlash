@@ -7,6 +7,44 @@
     text-align: center;
 }
 
+.modal_container {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    z-index: 1000;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 20px 5px rgb(166, 166, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_border {
+    position: relative;
+    width: 775px;
+    height: 575px;
+    border: 5px double $primary_color;
+}
+
+.close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
 .main_container {
     width: 100vw;
     min-height: 100vh;
@@ -53,28 +91,45 @@
     width: 100%;
 }
 
+.about_content {
+    max-width: 800px;
+    margin-top: 50px; 
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
 .about_container {
     width: 100vw;
     min-height: 100vh;
     display: flex;
     align-items: center;
-
-    & > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-    }
 }
 
-.about_content {
-    background-color: $secondary_color;
+.carousels_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials {
+    display: grid;
+    flex: 1;
     height: 500px;
-    margin-right: 50px;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.testimonials_img {
+    position: relative;
 
     p {
+        position: absolute;
         color: white;
-        max-width: 600px;
+        z-index: 2;
+        top: 5px;
+        right: 5px;
     }
 }
 
@@ -103,11 +158,17 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     iframe {
         width: 700px;
         height: 500px;
         border: none;
+    }
+
+    p {
+        width: 700px;
     }
 }
 
