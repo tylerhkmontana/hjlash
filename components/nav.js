@@ -52,10 +52,10 @@ export default function Nav() {
             variants={nav}
             initial="on"
             animate={isScrolling? "off" : "on"}>
-                <motion.li variants={routes}><a>Home</a></motion.li>
-                <motion.li variants={routes}><a>About</a></motion.li>
-                <motion.li variants={routes}><a>Pricing</a></motion.li>
-                <motion.li variants={routes}><a>Location</a></motion.li>
+                <motion.li variants={routes}><a href='#home'>Home</a></motion.li>
+                <motion.li variants={routes}><a href='#about'>About</a></motion.li>
+                <motion.li variants={routes}><a href='#pricing'>Pricing</a></motion.li>
+                <motion.li variants={routes}><a href='#location'>Location</a></motion.li>
             </motion.ul>
         </div>
     )

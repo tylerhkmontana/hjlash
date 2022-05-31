@@ -3,9 +3,8 @@
 html,
 body {
   color: $secondary_color;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.1em;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 a {
@@ -19,6 +18,7 @@ a {
   box-sizing: border-box;
   font-size: $base_font;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -31,7 +31,6 @@ button {
   border-radius: 5px;
   font-family: inherit;
   letter-spacing: inherit;
-  font-weight: bold;
 
   &:hover {
     background-color: $primary_color;
