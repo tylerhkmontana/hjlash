@@ -25,14 +25,14 @@ export default function Home(files) {
             <Logo />
             <Nav />
 
-            <div className={styles.modal_container} style={{display: modal ? 'flex' : 'none'}}>
+            {/* <div className={styles.modal_container} style={{display: modal ? 'flex' : 'none'}}>
                 <div className={styles.modal}>
                     <div className={styles.modal_border}>
                     <img className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
 
                     </div>
                 </div>
-            </div>
+            </div> */}
         
             <div id='home' className={styles.main_container}>
                 <div className={styles.main_content}>
