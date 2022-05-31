@@ -40,7 +40,7 @@ export default function Home() {
       <div className={styles.main_container}>
         <h2>The best lash spot is coming to your area!</h2>
         <h1>COMING JUNE 2022</h1>
-        <p>"The one that stands out from the others"</p>
+        <p>&ldquo;The one that stands out from the others&rdquo;</p>
   
       
         <form className={styles.form_container} onSubmit={(e) => sendEmail(e)}>
