@@ -19,22 +19,26 @@ a {
   font-size: $base_font;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  @include breakpoint(mobile) {
+    font-size: 16px;
+  }
 }
 
 button {
   cursor: pointer;
-  border: 2px solid $primary_color;
-  background-color: transparent;
-  font-size: $md_font;
+  border: none;
+  background-color: $primary_color;
+  font-size: inherit;
   padding: 10px;
-  color: $primary_color;
+  color: white;
   border-radius: 5px;
   font-family: inherit;
   letter-spacing: inherit;
 
   &:hover {
-    background-color: $primary_color;
-    color: white;
+    background-color: transparent;
+    color: $primary_color;
     transition: 0.5s;
   }
 }

@@ -2,7 +2,7 @@ import styles from '../styles/components/carousels.module.scss'
 import Image from 'next/image'
 import { useState } from 'react'
 
-export default function Carousels({ urls, width, height }) {
+export default function Carousels({ urls }) {
     urls = urls.files
     const [index, setIndex] = useState(0)
     const carouselLength = urls.length
@@ -18,7 +18,7 @@ export default function Carousels({ urls, width, height }) {
     return (
         <div className={styles.carousels_container}>
             <img className={styles.arrow_left} style={{opacity: index === 0 ? 0 : 1}} src='/arrow-left.png' onClick={() => carouselController('left')}/>
-            <div style={{width, height}} className={styles.carousels}>
+            <div className={styles.carousels}>
                 {
                     urls.map((url, i) => <Image key={i} style={{opacity: i === index ? 1 : 0, transition: 0.5}} className={styles.img} layout='fill' src={`/carousels/${url}`}/>)
                 }

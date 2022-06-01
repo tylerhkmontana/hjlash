@@ -4,7 +4,13 @@
     width: 100vw;
     font-size: $xlg_font;
     text-align: center;
+    
+    @include breakpoint(mobile) {
+        font-size: $lg_font;
+    }
 }
+
+// Modal
 
 .modal_container {
     width: 100vw;
@@ -44,11 +50,18 @@
     cursor: pointer;
 }
 
+// Main Page
+
 .main_container {
     width: 100vw;
     min-height: 100vh;
     display: flex;
     padding: 0 50px;
+
+    @include breakpoint(smallScreen) {
+        padding-top: 200px;
+        flex-direction: column;
+    }
 }
 
 .main_img_container {
@@ -57,13 +70,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
 }
 
 .main_img {
     position: relative;
     margin-left: 20px;
     width: 23vw;
-    height: 50vh;
+    height: 30vw;
 }
 
 
@@ -73,9 +90,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
+    @include breakpoint(smallScreen) {
+        align-items: center;
+    }
+    @include breakpoint(mobile) {
+        h1, p { text-align: center; }
+    }
 
     h1 { 
-        font-size: $xxlg_font; 
+        font-size: $xlg_font; 
+
+        @include breakpoint(mobile) {
+            font-size: $lg_font;
+        }
     }
 
     p {
@@ -92,27 +120,37 @@
 
 .about_container {
     background-color: $primary_color;
-    p { 
-        margin-bottom: 50px;
-    }
 }
 
 .about_content {
     max-width: 800px;
     margin-top: 50px; 
-    margin: 50px auto 0 auto;
+    margin: 50px auto;
     text-align: center;
+
+    @include breakpoint(tablet) {
+        width: 600px;
+    }
+
+    @include breakpoint(mobile) {
+        width: 250px;
+    }
 }
 
 .about_gallery {
     width: 85vw;
     margin: auto;
     min-height: 90vh;
-    min-width: 1050px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
+
+    @include breakpoint(smallScreen) {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+    }
 }
 
 .carousels_container {
@@ -123,10 +161,21 @@
 
 .testimonials {
     display: grid;
-    height: 500px;
-    grid-template-columns: 300px 300px;
+    height: 30vw;
+    grid-template-columns: 20vw 20vw;
     justify-content: center;
     grid-gap: 30px;
+
+    @include breakpoint(tablet) {
+        grid-template-columns: 250px 250px;
+        height: 400px;
+    }
+
+    @include breakpoint(mobile) {
+        grid-template-columns: 150px 150px;
+        height: 250px;
+        grid-gap: 10px;
+    }
 }
 
 .testimonials_img {
@@ -138,6 +187,11 @@
         z-index: 2;
         bottom: 5px;
         left: 45%;
+
+        @include breakpoint(mobile) {
+            font-size: $sm_font;
+            left: 40%;
+        }
     }
 }
 
@@ -146,6 +200,11 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        padding: 0 25px;
+    }
 }
 
 .hashtag_container {
@@ -161,6 +220,10 @@
         color: white;
         padding: 5px;
         margin: 5px 5px;
+        
+        @include breakpoint(mobile) {
+            font-size: $sm_font;
+        }
     }
 }
 
@@ -179,10 +242,18 @@
         display: flex;
         align-items: center;
         color: white;
+
+        @include breakpoint(mobile) {
+            font-size: $sm_font;
+        }
     }
 
     img {
         width: 25px;
+        @include breakpoint(mobile) {
+            font-size: $sm_font;
+            width: 15px;
+        }
     }
 }
 
@@ -201,6 +272,11 @@
     width: 400px;
     height: 800px;
     margin: 50px 0;
+
+    @include breakpoint(mobile) {
+        width: 300px;
+        height: 600px;
+    }
 }
 
 .location_container {
@@ -216,6 +292,11 @@
     height: 500px;
     border: none;
     margin-top: 50px;
+
+    @include breakpoint(mobile) {
+        width: 300px;
+        height: 350px;
+    }
 }
 
 .location_content {
@@ -223,7 +304,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    @include breakpoint(mobile) {
+        width: 300px;
+    }
+    p, a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include breakpoint(mobile) {
+            font-size: $sm_font;
+        }
+    }
+}
+
+.info_icon {
+    width: 25px;
+    @include breakpoint(mobile) {
+        width: 10px;
+    }
 }
 
 .skew_cc{

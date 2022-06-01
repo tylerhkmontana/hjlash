@@ -8,6 +8,18 @@
 
 .carousels {
     position: relative;
+    width: 35vw;
+    height: 30vw;
+
+    @include breakpoint(tablet) {
+        width: 530px;
+        height: 350px;
+    }
+
+    @include breakpoint(mobile) {
+        width: 310px;
+        height: 200px;
+    }
 }
 
 .img {
@@ -17,7 +29,21 @@
 .arrow_left, .arrow_right {
     cursor: pointer;
     width: 50px;
+
+    @include breakpoint(mobile) {
+        width: 25px;
+    }
 }
 
-.arrow_left { margin-right: 25px; }
-.arrow_right { margin-left: 25px; }
+.arrow_left { 
+    margin-right: 25px; 
+    @include breakpoint(mobile) {
+        margin-right: 5px;
+    }
+}
+.arrow_right { 
+    margin-left: 25px; 
+    @include breakpoint(mobile) {
+        margin-left: 5px;
+    }
+}

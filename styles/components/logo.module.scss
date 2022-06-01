@@ -7,13 +7,16 @@
     text-align: center;
     left: 50px;
 
-    h1 {
+    h1, .j {
         font-size: $xlg_font;   
         font-family: 'Open Sans', sans-serif;
+
+        @include breakpoint(mobile) {
+            font-size: $lg_font;
+        }
     }
 }
 
 .j {
     color: $primary_color;
-    font-size: $xlg_font;
 }
