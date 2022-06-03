@@ -18,7 +18,7 @@ export default function Home(files) {
         <div>
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet"/>
                 <title>HJ Lash</title>
             </Head>
@@ -69,7 +69,7 @@ export default function Home(files) {
             </div>
             <div className={styles.insta}>
                 <div className={styles.hashtag_container}>
-                    <span className={styles.hashtag}>#eyelashextensions</span><span style={{backgroundColor: '#3B429F'}} className={styles.hashtag}>#FOLLOW</span><span className={styles.hashtag}>#eyelashes</span>
+                    <span style={{backgroundColor: '#3B429F'}} className={styles.hashtag}>#FOLLOW</span><span className={styles.hashtag}>#eyelashextensions</span><span className={styles.hashtag}>#eyelashes</span>
                     <span style={{backgroundColor: '#F4D35E'}} className={styles.hashtag}>#US</span><span className={styles.hashtag}>#lashgoals</span><span className={styles.hashtag}>#lashartist</span>
                     <span className={styles.hashtag}>#beauty</span><span style={{backgroundColor: '#6A3937'}} className={styles.hashtag}>#ON</span><span className={styles.hashtag}>#love</span>
                     <span className={styles.hashtag}>#fashion</span><span style={{backgroundColor: '#F95738'}} className={styles.hashtag}>#INSTAGRAM</span><span className={styles.hashtag}>#style</span>
@@ -86,7 +86,7 @@ export default function Home(files) {
             <div id='pricing' className={styles.pricing_container}>
                 <h1 className={styles.section_divider}>Pricing</h1>
                 <div className={styles.menu_container}>
-                    <Image layout='fill' src='/menu.jpg' />
+                    <Image layout='fill' src='/menu.png' />
                 </div>
             </div>
             <div className={styles.skew_cc}></div>
