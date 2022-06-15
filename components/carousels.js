@@ -14,7 +14,7 @@ export default function Carousels({ urls }) {
             setIndex(index - 1)
         }
     }
-
+    
     return (
         <div className={styles.carousels_container}>
             <img className={styles.arrow_left} style={{opacity: index === 0 ? 0 : 1}} src='/arrow-left.png' onClick={() => carouselController('left')}/>
