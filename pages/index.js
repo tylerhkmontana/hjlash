@@ -29,7 +29,8 @@ export default function Home(files) {
                 <div className={styles.modal}>
                     <div className={styles.modal_border}>
                     <img className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
-
+                        <h1>Grand Opening</h1>
+                        <p>50% off on ALL lash services until the end of July!</p>
                     </div>
                 </div>
             </div>
@@ -38,19 +39,23 @@ export default function Home(files) {
                 <div className={styles.main_content}>
                     <h1>Slaying lashes <br></br> all day</h1>
                     <p>We are one of the top rated eyelash extension salons in New Jersey. We specialize in custom lash extensions.</p>
-                    <a href='https://www.appointfix.com/book/HJ-Lash'><button>Make an Appointment</button></a>
+                    {/* <a href='https://www.appointfix.com/book/HJ-Lash'><button>Make an Appointment</button></a> */}
+                    <h2 className={styles.coming_soon}>COMING IN JUNE!!</h2>
                 </div>  
                 <div className={styles.main_img_container}>
-                    <div className={styles.main_img}><Image layout='fill' src='/img1.jpg'/></div>
-                    <div className={styles.main_img}><Image layout='fill' src='/img2.jpg'/></div>
-                    <div className={styles.main_img}><Image layout='fill' src='/img4.jpg'/></div>
+                    <div className={styles.main_img}><Image priority='true' layout='fill' src='/img1.jpg'/></div>
+                    <div className={styles.main_img}><Image priority='true' layout='fill' src='/img2.jpg'/></div>
+                    <div className={styles.main_img}><Image priority='true' layout='fill' src='/img4.jpg'/></div>
                 </div>
             </div>
             
             <div className={styles.skew_c}></div>
             <div id='about' className={styles.about_container}>
                 <h1 className={styles.section_divider}>About Us</h1>
-                <p className={styles.about_content}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <p className={styles.about_content}>
+                    We are the best lash extension place located in Hasbrouck Heights, New Jersey. All of our staffs are professionally trained and certified with
+                    long years of experiences. Clinic level hygienic facility and freshly renovated interior provide our clients the best hospitality while their styaing.  
+                </p>
             </div>
             <div className={styles.skew_cc}></div>
 
@@ -99,7 +104,18 @@ export default function Home(files) {
                 <div className={styles.location_content}>
                     <p><img className={styles.info_icon} src="/map.png" />&nbsp;440 Boulevard, Hasbrouck Heights, NJ 07604</p>
                     <a href="tel:2012885751"><img className={styles.info_icon} src="/phone.png" />&nbsp;201-288-5751</a>
-                    <p><img className={styles.info_icon} src="/time.png" />&nbsp;Mon-Sun 10AM - 10PM</p>
+                    <div className={styles.business_hours}>
+                        <div className={styles.days}>
+                            <p>MON-FRI</p>
+                            <p>SAT</p>
+                            <p>SUN</p>
+                        </div>
+                        <div className={styles.hours}>
+                            <p>9:30AM - 7:00PM</p>
+                            <p>9:30AM - 6:00PM</p>
+                            <p>CLOSED</p>
+                        </div>
+                    </div>
                 </div>  
             </div>
 

@@ -20,7 +20,7 @@ export default function Carousels({ urls }) {
             <img className={styles.arrow_left} style={{opacity: index === 0 ? 0 : 1}} src='/arrow-left.png' onClick={() => carouselController('left')}/>
             <div className={styles.carousels}>
                 {
-                    urls.map((url, i) => <Image key={i} style={{opacity: i === index ? 1 : 0, transition: 0.5}} className={styles.img} layout='fill' src={`/carousels/${url}`}/>)
+                    urls.map((url, i) => <Image key={i} priority='true' style={{opacity: i === index ? 1 : 0, transition: 0.5}} className={styles.img} layout='fill' src={`/carousels/${url}`}/>)
                 }
             </div>
             <img className={styles.arrow_right} style={{opacity: index === carouselLength - 1 ? 0 : 1}} src='/arrow-right.png' onClick={() => carouselController('right')}/>
