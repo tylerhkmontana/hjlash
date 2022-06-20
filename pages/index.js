@@ -54,7 +54,7 @@ export default function Home(files) {
                 <h1 className={styles.section_divider}>About Us</h1>
                 <p className={styles.about_content}>
                     We are the best lash extension place located in Hasbrouck Heights, New Jersey. All of our staffs are professionally trained and certified with
-                    long years of experiences. Clinic level hygienic facility and freshly renovated interior provide our clients the best hospitality while their styaing.  
+                    long years of experiences. Clinic level hygienic facility and freshly renovated interior provide our clients the best hospitality while their staying.  
                 </p>
             </div>
             <div className={styles.skew_cc}></div>
