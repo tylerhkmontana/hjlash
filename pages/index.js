@@ -29,8 +29,8 @@ export default function Home(files) {
                 <div className={styles.modal}>
                     <div className={styles.modal_border}>
                     <img className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
-                        <h1>Grand Opening</h1>
-                        <p>50% off on ALL lash services until the end of July!</p>
+                        <h1>We are coming soon!</h1>
+                        {/* <p>50% off on ALL lash services until the end of July!</p> */}
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@ export default function Home(files) {
                     <h1>Slaying lashes <br></br> all day</h1>
                     <p>We are one of the top rated eyelash extension salons in New Jersey. We specialize in custom lash extensions.</p>
                     {/* <a href='https://www.appointfix.com/book/HJ-Lash'><button>Make an Appointment</button></a> */}
-                    <h2 className={styles.coming_soon}>COMING IN JUNE!!</h2>
+                    <h2 className={styles.coming_soon}>COMING IN JULY!!</h2>
                 </div>  
                 <div className={styles.main_img_container}>
                     <div className={styles.main_img}><Image priority='true' layout='fill' src='/img1.jpg'/></div>
@@ -86,7 +86,7 @@ export default function Home(files) {
                 </div>
             </div>
             
-            <div className={styles.skew_c}></div>
+            {/* <div className={styles.skew_c}></div>
 
             <div id='pricing' className={styles.pricing_container}>
                 <h1 className={styles.section_divider}>Pricing</h1>
@@ -94,7 +94,7 @@ export default function Home(files) {
                     <Image layout='fill' src='/menu.png' />
                 </div>
             </div>
-            <div className={styles.skew_cc}></div>
+            <div className={styles.skew_cc}></div> */}
 
 
             <h1 className={styles.section_divider}>Location</h1>
