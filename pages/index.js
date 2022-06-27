@@ -86,7 +86,7 @@ export default function Home(files) {
                 </div>
             </div>
             
-            {/* <div className={styles.skew_c}></div>
+            <div className={styles.skew_c}></div>
 
             <div id='pricing' className={styles.pricing_container}>
                 <h1 className={styles.section_divider}>Pricing</h1>
@@ -94,7 +94,7 @@ export default function Home(files) {
                     <Image layout='fill' src='/menu.png' />
                 </div>
             </div>
-            <div className={styles.skew_cc}></div> */}
+            <div className={styles.skew_cc}></div>
 
 
             <h1 className={styles.section_divider}>Location</h1>
