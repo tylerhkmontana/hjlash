@@ -29,8 +29,9 @@ export default function Home(files) {
                 <div className={styles.modal}>
                     <div className={styles.modal_border}>
                     <img className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
-                        <h1>We are coming soon!</h1>
-                        {/* <p>50% off on ALL lash services until the end of July!</p> */}
+                        <h1>Opening Soon!</h1>
+                        <h2>07 &#183; 06 &#183; 22</h2>
+                        <p><span>40%</span> off on new customers!!</p>
                     </div>
                 </div>
             </div>
@@ -40,7 +41,7 @@ export default function Home(files) {
                     <h1>Slaying lashes <br></br> all day</h1>
                     <p>We are one of the top rated eyelash extension salons in New Jersey. We specialize in custom lash extensions.</p>
                     {/* <a href='https://www.appointfix.com/book/HJ-Lash'><button>Make an Appointment</button></a> */}
-                    <h2 className={styles.coming_soon}>COMING IN JULY!!</h2>
+                    <h2 className={styles.coming_soon}>Opening on 07 &#183; 06 &#183; 22</h2>
                 </div>  
                 <div className={styles.main_img_container}>
                     <div className={styles.main_img}><Image priority='true' layout='fill' src='/img1.jpg'/></div>

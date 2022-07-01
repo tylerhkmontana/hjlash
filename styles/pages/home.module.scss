@@ -67,13 +67,22 @@
 
     h1 {
         font-size: $xlg_font;
-        margin-bottom: 30px;
         text-align: center;
+    }
+
+    h2 {
+        font-size: $lg_font;
+        margin: 30px 0;
     }
 
     p {
         font-size: $md_font;
         text-align: center;
+
+        & > span {
+            font-size: $md_font + 8;
+            font-weight: bold;
+        }
     }
 
     @include breakpoint(tablet) {
