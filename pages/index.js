@@ -40,8 +40,8 @@ export default function Home(files) {
                 <div className={styles.main_content}>
                     <h1>Slaying lashes <br></br> all day</h1>
                     <p>We are one of the top rated eyelash extension salons in New Jersey. We specialize in custom lash extensions.</p>
-                    {/* <a href='https://www.appointfix.com/book/HJ-Lash'><button>Make an Appointment</button></a> */}
-                    <h2 className={styles.coming_soon}>Opening on 07 &#183; 06 &#183; 22</h2>
+                    <a href='https://www.appointfix.com/book/HJ-Lash'><button>Make an Appointment</button></a>
+                    {/* <h2 className={styles.coming_soon}>Opening on 07 &#183; 06 &#183; 22</h2> */}
                 </div>  
                 <div className={styles.main_img_container}>
                     <div className={styles.main_img}><Image priority='true' layout='fill' src='/img1.jpg'/></div>
