@@ -29,7 +29,7 @@ export default function Home(files) {
                 <div className={styles.modal}>
                     <div className={styles.modal_border}>
                     <img className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
-                        <h1><span>40%</span> off on new customers!!</h1>
+                        <h1><span>40%</span> off on all the eyelash services for new customers!!</h1>
                     </div>
                 </div>
             </div>
