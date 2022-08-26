@@ -28,7 +28,7 @@ export default function Home(files) {
             <div className={styles.modal_container} style={{display: modal ? 'flex' : 'none'}}>
                 <div className={styles.modal}>
                     <div className={styles.modal_border}>
-                    <img className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
+                    <img alt='close-btn' className={styles.close_btn} src='/close.png' onClick={() => setModal(!modal)}/>
                         <h1><span>40%</span> off on all the eyelash services for new customers!!</h1>
                     </div>
                 </div>
@@ -65,10 +65,10 @@ export default function Home(files) {
                 </div>
                 
                 <div className={styles.testimonials}>
-                    <div className={styles.testimonials_img}><p>Before</p><Image layout='fill' src='/eyelashes/eyelash1.jpg'/></div>
-                    <div className={styles.testimonials_img}><p>After</p><Image layout='fill' src='/eyelashes/eyelash2.jpg'/></div>
-                    <div className={styles.testimonials_img}><p>Before</p><Image layout='fill' src='/eyelashes/eyelash3.jpg'/></div>
-                    <div className={styles.testimonials_img}><p>After</p><Image layout='fill' src='/eyelashes/eyelash4.jpg'/></div>
+                    <div className={styles.testimonials_img}><p>Before</p><Image alt='image of eyelash' layout='fill' src='/eyelashes/eyelash1.jpg'/></div>
+                    <div className={styles.testimonials_img}><p>After</p><Image alt='image of eyelash' layout='fill' src='/eyelashes/eyelash2.jpg'/></div>
+                    <div className={styles.testimonials_img}><p>Before</p><Image alt='image of eyelash' layout='fill' src='/eyelashes/eyelash3.jpg'/></div>
+                    <div className={styles.testimonials_img}><p>After</p><Image alt='image of eyelash' layout='fill' src='/eyelashes/eyelash4.jpg'/></div>
                 </div>
             </div>
             <div className={styles.insta}>
@@ -90,7 +90,7 @@ export default function Home(files) {
             <div id='pricing' className={styles.pricing_container}>
                 <h1 className={styles.section_divider}>Pricing</h1>
                 <div className={styles.menu_container}>
-                    <Image layout='fill' src='/menu.png' />
+                    <Image alt='image of menu' layout='fill' src='/menu.png' />
                 </div>
             </div>
             <div className={styles.skew_cc}></div>
